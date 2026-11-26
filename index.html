@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Biuro nieruchomości Elbląg - Szulc &amp; Szulc Nieruchomości</title>
+<meta name="description" content="Biuro nieruchomości w Elblągu, ul. Mostowa 7. Domy, mieszkania, lokale i działki na sprzedaż i wynajem. Pełna obsługa transakcji i kredyt hipoteczny na miejscu.">
+<link rel="icon" href="img/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/lora-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-tel.webp" media="(max-width:699px)">
+<link rel="preload" as="image" imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" imagesizes="100vw" media="(min-width:700px)">
+<style>
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--ciem:#0F2A14;--ziel:#2D6A2E;--ziel2:#245725;--jas:#9BC16E;--txt:#18211A;--szary:#5A635C;--tlo2:#F2F4F3;--linia:#DDE2DE;--w:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font:16px/1.65 "Manrope",system-ui,sans-serif;color:var(--txt);background:#fff;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Lora",Georgia,serif;font-weight:600;line-height:1.15;margin:0;letter-spacing:-.01em}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+.tri{width:20px;height:18px;flex:none;color:var(--ziel)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:700 16px/1 "Manrope",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-z{background:var(--ziel);color:#fff} .btn-z:hover{background:var(--ziel2)}
+.btn-j{background:#fff;color:var(--ciem)} .btn-j:hover{background:var(--jas)}
+.btn-o{border-color:rgba(255,255,255,.75);color:#fff} .btn-o:hover{background:rgba(255,255,255,.12)}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.logo img{width:52px;height:52px}
+.logo b{display:block;font:700 19px/1.1 "Lora",serif;color:var(--ciem)}
+.logo span{display:block;font-size:13px;color:var(--szary);letter-spacing:.02em}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a.on{border-color:var(--ziel);color:var(--ziel)}
+.tel{font-weight:800;color:var(--ziel);text-decoration:none;white-space:nowrap}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--linia);background:#fff;cursor:pointer;padding:0}
+.burger i{display:block;width:20px;height:2px;background:var(--ciem);margin:5px auto}
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 72px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,28,13,.86) 0%,rgba(9,28,13,.62) 42%,rgba(9,28,13,.08) 75%),linear-gradient(0deg,rgba(9,28,13,.55),rgba(9,28,13,0) 45%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:56px;padding-bottom:64px}
+.hero-in{max-width:760px}
+.hero .apex{display:flex;align-items:center;gap:10px;font-weight:600;color:#DCEBCB;margin-bottom:18px;font-size:15px}
+.hero .apex .tri{color:var(--jas)}
+.hero h1{font-size:clamp(34px,4.4vw,60px);margin-bottom:20px}
+.hero p{font-size:clamp(16px,1.35vw,19px);max-width:560px;margin:0 0 30px;color:#EEF4EA}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px}
+.credit{position:absolute;right:10px;bottom:6px;z-index:2;font-size:11px;color:rgba(255,255,255,.6)}
+/* sekcje */
+.sek{padding:96px 0}
+.sek-h{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.sek-h h2{font-size:clamp(28px,3vw,42px)}
+.sek-h p{margin:10px 0 0;color:var(--szary);max-width:560px}
+.apexh{display:flex;align-items:center;gap:12px}
+/* filtry i oferty */
+.filtry{display:flex;flex-wrap:wrap;gap:8px}
+.filtry button{font:600 15px/1 "Manrope",sans-serif;padding:12px 16px;background:#fff;border:1px solid var(--linia);color:var(--txt);cursor:pointer}
+.filtry button[aria-pressed=true]{background:var(--ciem);border-color:var(--ciem);color:#fff}
+.filtry .sep{width:1px;background:var(--linia);margin:0 6px}
+.siatka{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px}
+.of a{display:block;text-decoration:none;height:100%}
+.of-img{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:var(--tlo2)}
+.of-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.of a:hover img{transform:scale(1.04)}
+.of-n{position:absolute;left:0;bottom:0;background:rgba(15,42,20,.82);color:#fff;font-size:13px;font-weight:600;padding:5px 10px}
+.of-b{display:grid;gap:2px;padding:16px 2px 0;border-top:3px solid var(--ziel);margin-top:-3px;position:relative}
+.of-t{font:600 20px/1.25 "Lora",serif;color:var(--ciem)}
+.of-l{color:var(--szary)}
+.of-d{font-size:15px;color:var(--szary)}
+.of-c{font-weight:800;font-size:19px;color:var(--ziel);margin-top:6px}
+.of[hidden]{display:none}
+.wiecej{margin-top:40px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.wiecej small{color:var(--szary)}
+/* sprzedaz - ciemna */
+.ciemna{background:var(--ciem);color:#E8F0E3;position:relative;overflow:hidden}
+.ciemna::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(60deg,rgba(155,193,110,.05) 0 1px,transparent 1px 9px),repeating-linear-gradient(-60deg,rgba(155,193,110,.05) 0 1px,transparent 1px 9px);pointer-events:none}
+.ciemna .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.ciemna h2{color:#fff;font-size:clamp(28px,3vw,42px);margin-bottom:18px}
+.ciemna .tri{color:var(--jas)}
+.ciemna p{margin:0 0 22px}
+.lista{list-style:none;margin:0 0 32px;padding:0;display:grid;gap:14px}
+.lista li{display:flex;gap:14px;align-items:flex-start}
+.lista li .tri{margin-top:4px;width:16px;height:15px}
+.ciemna figure{margin:0;position:relative}
+.ciemna figure img{width:100%;aspect-ratio:4/5;object-fit:cover;clip-path:polygon(50% 0,100% 18%,100% 100%,0 100%,0 18%)}
+.ciemna figcaption,.fot figcaption{font-size:12px;opacity:.6;margin-top:8px}
+/* kredyty */
+.szara{background:var(--tlo2)}
+.kredyt{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.kredyt h2{font-size:clamp(26px,2.6vw,38px);margin-bottom:16px}
+.kredyt p{margin:0 0 16px;color:#323B34}
+.kroki{list-style:none;margin:0;padding:0;border-top:1px solid #CBD3CD}
+.kroki li{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid #CBD3CD}
+.kroki b{display:block;font-family:"Lora",serif;font-size:19px;font-weight:600;color:var(--ciem)}
+.kroki span{color:var(--szary)}
+/* o biurze */
+.biuro{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.fot{margin:0}
+.fot img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 85%}
+.biuro h2{font-size:clamp(28px,3vw,42px);margin-bottom:18px}
+.biuro p{margin:0 0 16px;color:#323B34}
+.osoby{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px;border-top:1px solid var(--linia);padding-top:24px}
+.osoby b{display:block;font:600 19px "Lora",serif;color:var(--ciem)}
+.osoby a{display:block;text-decoration:none;color:var(--szary);font-size:15px;word-break:break-word}
+.osoby a.t{color:var(--ziel);font-weight:800;font-size:17px}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.kontakt h2{font-size:clamp(28px,3vw,42px);margin-bottom:14px}
+.adr{font-size:18px;margin:0 0 24px}
+.adr b{font-family:"Lora",serif}
+form{display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select,textarea{font:16px "Manrope",sans-serif;padding:13px 14px;border:1px solid #C9D0CA;background:#fff;color:var(--txt);width:100%}
+textarea{min-height:120px;resize:vertical}
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.info{font-size:14px;color:var(--ziel);font-weight:600;min-height:1em;margin:0}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:var(--tlo2);border:1px solid var(--linia)}
+.mapa iframe{width:100%;height:100%;border:0}
+/* stopka */
+.stopka{background:#E8ECE9;color:#3E4740;padding:44px 0 28px;font-size:15px}
+.stopka .g{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.stopka b{display:block;font-family:"Lora",serif;font-size:17px;color:var(--ciem);margin-bottom:8px}
+.stopka a{display:block;text-decoration:none;padding:2px 0}
+.stopka a:hover{color:var(--ziel)}
+.stopka .d{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;border-top:1px solid #CDD4CF;margin-top:28px;padding-top:18px;font-size:13px}
+.stopka .d a{display:inline-flex}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (max-width:1020px){
+ .nav,.top .tel{display:none} .burger{display:block}
+ .nav.otw{display:flex;position:absolute;left:0;right:0;top:72px;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--linia);padding:8px 20px 18px;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+ .nav.otw a{padding:14px 0;border-bottom:1px solid var(--linia);font-size:17px}
+ .siatka{grid-template-columns:repeat(2,1fr)}
+ .ciemna .wrap,.kredyt,.biuro,.kontakt{grid-template-columns:1fr;gap:40px}
+ .ciemna figure img{aspect-ratio:16/10}
+ .stopka .g{grid-template-columns:1fr 1fr}
+}
+@media (max-width:699px){
+ .top .wrap{height:64px} html{scroll-padding-top:68px} .nav.otw{top:64px}
+ .logo img{width:44px;height:44px} .logo b{font-size:17px}
+ .hero{min-height:calc(100svh - 64px);align-items:flex-end}
+ .hero::after{background:linear-gradient(0deg,rgba(9,28,13,.92) 0%,rgba(9,28,13,.7) 48%,rgba(9,28,13,.15) 100%)}
+ .hero .wrap{padding-top:40px;padding-bottom:32px}
+ .hero h1{font-size:clamp(29px,8.2vw,36px);margin-bottom:14px}
+ .hero p{margin-bottom:26px;font-size:16px;line-height:1.55}
+ .hero .apex{margin-bottom:12px;font-size:14px}
+ .hero .cta .btn{flex:1 1 100%}
+ .sek{padding:64px 0}
+ .filtry{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px;padding:0 20px 4px;scrollbar-width:none}
+ .filtry::-webkit-scrollbar{display:none}
+ .filtry button{flex:none}
+ .siatka{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;gap:16px;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
+ .siatka::-webkit-scrollbar{display:none}
+ .of{flex:0 0 82%;scroll-snap-align:start}
+ .dwa,.osoby{grid-template-columns:1fr}
+ .stopka .g{grid-template-columns:1fr 1fr;gap:22px}
+}
+@media (max-height:700px) and (max-width:699px){
+ .hero h1{font-size:28px} .hero p{font-size:15px;margin-bottom:24px} .hero .wrap{padding-bottom:22px} .btn{min-height:48px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="logo" href="#"><img src="img/logo.webp" alt="Szulc &amp; Szulc Nieruchomości - logo" width="212" height="212"><span><b>Szulc &amp; Szulc</b><span>Nieruchomości · Elbląg</span></span></a>
+<nav class="nav" id="nav">
+<a href="#oferty">Oferty</a><a href="#sprzedaz">Chcę sprzedać</a><a href="#kredyty">Kredyty</a><a href="#biuro">O biurze</a><a href="#kontakt">Kontakt</a>
+</nav>
+<a class="tel" href="tel:+48500251769">500 251 769</a>
+<button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<picture>
+<source media="(max-width:699px)" srcset="img/hero-tel.webp">
+<img src="img/hero-1920.webp" srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" sizes="100vw" alt="Stare Miasto w Elblągu i rzeka Elbląg z wieży katedry" width="2560" height="1440" fetchpriority="high">
+</picture>
+<div class="wrap"><div class="hero-in">
+<div class="apex"><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg>ul. Mostowa 7, Stare Miasto w Elblągu</div>
+<h1>Biuro nieruchomości w Elblągu. Tworzymy nowy porządek nieruchomości.</h1>
+<p>Domy, mieszkania, lokale i działki w Elblągu i okolicy. Prowadzimy transakcję od oględzin do aktu notarialnego, a kredyt na zakup załatwisz u nas w biurze.</p>
+<div class="cta"><a class="btn btn-j" href="#oferty">Zobacz oferty</a><a class="btn btn-o" href="tel:+48500251769">Zadzwoń: 500 251 769</a></div>
+</div></div>
+<span class="credit">fot. MOs810, CC BY-SA 4.0</span>
+</section>
+
+<section class="sek" id="oferty">
+<div class="wrap">
+<div class="sek-h">
+<div><h2 class="apexh"><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg>Najnowsze oferty</h2><p>Każda oferta ma osobną stronę z galerią zdjęć i pełnym opisem. Wybierz rodzaj nieruchomości:</p></div>
+<div class="filtry" role="group" aria-label="Filtr ofert">
+<button type="button" data-f="k:*" aria-pressed="true">Wszystkie</button>
+<button type="button" data-f="k:dom" aria-pressed="false">Domy</button>
+<button type="button" data-f="k:mieszkanie" aria-pressed="false">Mieszkania</button>
+<button type="button" data-f="k:dzialka" aria-pressed="false">Działki</button>
+<span class="sep" aria-hidden="true"></span>
+<button type="button" data-f="t:sprzedaz" aria-pressed="false">Sprzedaż</button>
+<button type="button" data-f="t:wynajem" aria-pressed="false">Wynajem</button>
+</div>
+</div>
+<div class="siatka" id="siatka">
+<article class="of" data-k="dom" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1677" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1677.webp" alt="Dom na sprzedaż, Jelonki" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">24 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Dom na sprzedaż</span>
+<span class="of-l">Jelonki</span>
+<span class="of-d">100 m² · 4 pokoje</span>
+<span class="of-c">269 000 zł</span></span></a></article>
+<article class="of" data-k="dzialka" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1676" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1676.webp" alt="Działka na sprzedaż, Lepno" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">20 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Działka na sprzedaż</span>
+<span class="of-l">Lepno</span>
+<span class="of-d">6 680 m²</span>
+<span class="of-c">159 000 zł</span></span></a></article>
+<article class="of" data-k="dzialka" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1675" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1675.webp" alt="Działka na sprzedaż, Jelonki" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">14 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Działka na sprzedaż</span>
+<span class="of-l">Jelonki</span>
+<span class="of-d">10 000 m²</span>
+<span class="of-c">199 000 zł</span></span></a></article>
+<article class="of" data-k="dom" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1674" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1674.webp" alt="Dom z halą magazynową na sprzedaż, Brąswałd" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">15 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Dom z halą magazynową na sprzedaż</span>
+<span class="of-l">Brąswałd</span>
+<span class="of-d">100 m² · 4 pokoje</span>
+<span class="of-c">890 000 zł</span></span></a></article>
+<article class="of" data-k="dzialka" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1673" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1673.webp" alt="Działka na sprzedaż, Kamionek Wielki" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">15 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Działka na sprzedaż</span>
+<span class="of-l">Kamionek Wielki</span>
+<span class="of-d">12 092 m²</span>
+<span class="of-c">362 760 zł</span></span></a></article>
+<article class="of" data-k="dzialka" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1672" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1672.webp" alt="Działka na sprzedaż, Kamionek Wielki" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">17 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Działka na sprzedaż</span>
+<span class="of-l">Kamionek Wielki</span>
+<span class="of-d">18 220 m²</span>
+<span class="of-c">546 600 zł</span></span></a></article>
+<article class="of" data-k="mieszkanie" data-t="wynajem">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1671" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1671.webp" alt="Mieszkanie na wynajem, Elbląg - ul. Broniewskiego" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">8 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Mieszkanie na wynajem</span>
+<span class="of-l">Elbląg - ul. Broniewskiego</span>
+<span class="of-d">36 m² · 1 pokój</span>
+<span class="of-c">1 200 zł / miesiąc</span></span></a></article>
+<article class="of" data-k="dzialka" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1670" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1670.webp" alt="Działka na sprzedaż, Błudowo" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">17 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Działka na sprzedaż</span>
+<span class="of-l">Błudowo</span>
+<span class="of-d">22 400 m²</span>
+<span class="of-c">285 000 zł</span></span></a></article>
+<article class="of" data-k="dom" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1669" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1669.webp" alt="Dom z halą magazynową na sprzedaż, Elbląg - ul. Królewiecka" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">47 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Dom z halą magazynową na sprzedaż</span>
+<span class="of-l">Elbląg - ul. Królewiecka</span>
+<span class="of-d">188 m² · 4 pokoje</span>
+<span class="of-c">2 290 000 zł</span></span></a></article>
+<article class="of" data-k="dzialka" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1668" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1668.webp" alt="Działka na sprzedaż, Elbląg - ul. Iwaszkiewicza" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">18 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Działka na sprzedaż</span>
+<span class="of-l">Elbląg - ul. Iwaszkiewicza</span>
+<span class="of-d">1 517 m²</span>
+<span class="of-c">499 000 zł</span></span></a></article>
+<article class="of" data-k="mieszkanie" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1667" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1667.webp" alt="Mieszkanie na sprzedaż, Osiek" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">17 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Mieszkanie na sprzedaż</span>
+<span class="of-l">Osiek</span>
+<span class="of-d">73 m² · 3 pokoje</span>
+<span class="of-c">199 000 zł</span></span></a></article>
+<article class="of" data-k="mieszkanie" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1666" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1666.webp" alt="Mieszkanie na sprzedaż, Osiek" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">38 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Mieszkanie na sprzedaż</span>
+<span class="of-l">Osiek</span>
+<span class="of-d">195 m² · 4 pokoje</span>
+<span class="of-c">599 000 zł</span></span></a></article>
+<article class="of" data-k="mieszkanie" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1665" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1665.webp" alt="Mieszkanie na sprzedaż, Elbląg - ul. Szczecińska" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">21 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Mieszkanie na sprzedaż</span>
+<span class="of-l">Elbląg - ul. Szczecińska</span>
+<span class="of-d">59 m² · 2 pokoje</span>
+<span class="of-c">259 000 zł</span></span></a></article>
+<article class="of" data-k="mieszkanie" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1664" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1664.webp" alt="Mieszkanie na sprzedaż, Elbląg - ul. Płk. Dąbka" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">31 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Mieszkanie na sprzedaż</span>
+<span class="of-l">Elbląg - ul. Płk. Dąbka</span>
+<span class="of-d">62 m² · 3 pokoje</span>
+<span class="of-c">439 000 zł</span></span></a></article>
+<article class="of" data-k="dzialka" data-t="sprzedaz">
+<a href="http://nieruchomosci-szulc.pl/?s2=show&amp;id=1663" target="_blank" rel="noopener">
+<span class="of-img"><img src="img/of-1663.webp" alt="Działka na sprzedaż, Sierpin" width="760" height="570" loading="lazy" decoding="async"><span class="of-n">16 zdjęć</span></span>
+<span class="of-b"><span class="of-t">Działka na sprzedaż</span>
+<span class="of-l">Sierpin</span>
+<span class="of-d">1 000 m²</span>
+<span class="of-c">159 000 zł</span></span></a></article>
+</div>
+<p class="info" id="brak" hidden>Brak ofert w tym wyborze, napisz, czego szukasz, a damy znać, gdy coś się pojawi.</p>
+<div class="wiecej"><button class="btn btn-z" type="button" id="pokaz">Pokaż kolejne oferty</button><small>W podglądzie 15 najnowszych z obecnej bazy, na docelowej stronie wszystkie, z wyszukiwarką.</small></div>
+</div>
+</section>
+
+<section class="sek ciemna" id="sprzedaz">
+<div class="wrap">
+<div>
+<h2 class="apexh"><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg>Chcesz sprzedać albo wynająć nieruchomość?</h2>
+<p>Bierzemy na siebie całą transakcję, żebyś nie musiał pilnować każdego papieru. Działamy na podstawie pisemnej umowy pośrednictwa, a wynagrodzenie ustalamy indywidualnie, zależnie od wartości transakcji.</p>
+<ul class="lista">
+<li><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg><span>Sprawdzamy stan prawny i finansowy nieruchomości oraz wiarygodność drugiej strony.</span></li>
+<li><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg><span>Przygotowujemy ofertę ze zdjęciami i pokazujemy ją kupującym i najemcom.</span></li>
+<li><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg><span>Organizujemy notariusza, obsługę prawną, wycenę i świadectwo charakterystyki energetycznej.</span></li>
+<li><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg><span>Kupującym pomagamy uzyskać kredyt hipoteczny, więc transakcja nie stoi w miejscu.</span></li>
+</ul>
+<div class="cta" style="display:flex;flex-wrap:wrap;gap:14px"><a class="btn btn-j" href="#kontakt">Opisz swoją nieruchomość</a><a class="btn btn-o" href="tel:+48530746226">530 746 226</a></div>
+</div>
+<figure><img src="img/rzeka-900.webp" srcset="img/rzeka-900.webp 900w, img/rzeka-1600.webp 1600w" sizes="(max-width:1020px) 100vw, 560px" alt="Elbląg z lotu ptaka, rzeka i Stare Miasto" width="1600" height="1200" loading="lazy" decoding="async"><figcaption>fot. MOs810, CC BY-SA 4.0</figcaption></figure>
+</div>
+</section>
+
+<section class="sek szara" id="kredyty">
+<div class="wrap kredyt">
+<div>
+<h2 class="apexh"><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg>Kredyt na zakup załatwisz w biurze</h2>
+<p>Doświadczenie w kredytach mamy od 1998 roku. Pomagamy wybrać korzystny kredyt hipoteczny i przeprowadzamy przez formalności, równolegle z przygotowaniem transakcji.</p>
+<p>Dzięki temu oferta, kredyt i umowa są w jednych rękach, a Ty wiesz, na jakim etapie jest każda sprawa.</p>
+<a class="btn btn-z" href="#kontakt">Zapytaj o kredyt</a>
+</div>
+<ol class="kroki">
+<li><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg><div><b>Rozmowa i wybór oferty</b><span>Mówisz, czego szukasz, a my dobieramy nieruchomości z naszej bazy.</span></div></li>
+<li><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg><div><b>Kredyt i sprawdzenie dokumentów</b><span>Weryfikujemy stan prawny i pomagamy uzyskać finansowanie.</span></div></li>
+<li><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg><div><b>Umowa i akt notarialny</b><span>Umawiamy notariusza i jesteśmy przy podpisaniu umowy.</span></div></li>
+</ol>
+</div>
+</section>
+
+<section class="sek" id="biuro">
+<div class="wrap biuro">
+<figure class="fot"><img src="img/mostowa-900.webp" srcset="img/mostowa-900.webp 900w, img/mostowa-1600.webp 1600w" sizes="(max-width:1020px) 100vw, 540px" alt="Kamienice przy ulicy Mostowej w Elblągu" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>ul. Mostowa w Elblągu, fot. Wikimedia Commons, CC BY-SA 3.0 pl</figcaption></figure>
+<div>
+<h2 class="apexh"><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg>Szulc &amp; Szulc, biuro na Starym Mieście</h2>
+<p>Biuro prowadzimy od 2012 roku, a nieruchomościami i kredytami zajmujemy się od 1998. Nie działamy rutynowo: każdego klienta traktujemy indywidualnie, żeby dobrze poznać jego potrzeby i dopasować do nich ofertę.</p>
+<p>Korzystając z naszych usług, oszczędzasz czas i masz pewność, że transakcja zostanie przeprowadzona starannie, a przede wszystkim bezpiecznie.</p>
+<div class="osoby">
+<div><b>Mateusz Szulc</b><a class="t" href="tel:+48500251769">500 251 769</a><a href="mailto:mateusz.szulc@nieruchomosci-szulc.pl">mateusz.szulc@nieruchomosci-szulc.pl</a></div>
+<div><b>Mirosław Szulc</b><a class="t" href="tel:+48530746226">530 746 226</a><a href="mailto:miroslaw.szulc@nieruchomosci-szulc.pl">miroslaw.szulc@nieruchomosci-szulc.pl</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sek szara" id="kontakt">
+<div class="wrap kontakt">
+<div>
+<h2 class="apexh"><svg class="tri" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 1 19 17H1Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 6.5 14 13.5H6Z" fill="currentColor"/></svg>Kontakt</h2>
+<p class="adr"><b>Szulc &amp; Szulc Nieruchomości</b><br>ul. Mostowa 7, 82-300 Elbląg</p>
+<div class="osoby" style="margin-top:0;border-top:0;padding-top:0">
+<div><b>Mateusz Szulc</b><a class="t" href="tel:+48500251769">500 251 769</a></div>
+<div><b>Mirosław Szulc</b><a class="t" href="tel:+48530746226">530 746 226</a></div>
+</div>
+<div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Mostowa+7,+82-300+Elbl%C4%85g&amp;z=16&amp;output=embed"></div>
+</div>
+<form id="form" novalidate>
+<div class="dwa"><label>Imię<input name="imie" autocomplete="name"></label><label>Telefon<input name="tel" type="tel" autocomplete="tel"></label></div>
+<label>E-mail<input name="mail" type="email" autocomplete="email"></label>
+<label>W czym możemy pomóc?<select name="temat"><option>Szukam nieruchomości</option><option>Chcę sprzedać</option><option>Chcę wynająć</option><option>Kredyt hipoteczny</option></select></label>
+<label>Wiadomość<textarea name="tresc" placeholder="Np. szukam mieszkania 2-3 pokoje w Elblągu do 350 000 zł"></textarea></label>
+<button class="btn btn-z" type="submit">Wyślij wiadomość</button>
+<p class="info" id="finfo" aria-live="polite"></p>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="stopka">
+<div class="wrap">
+<div class="g">
+<div><b>Szulc &amp; Szulc Nieruchomości</b>ul. Mostowa 7<br>82-300 Elbląg</div>
+<div><b>Oferty</b><a href="#oferty">Domy</a><a href="#oferty">Mieszkania</a><a href="#oferty">Lokale użytkowe</a><a href="#oferty">Działki</a></div>
+<div><b>Biuro</b><a href="#sprzedaz">Chcę sprzedać</a><a href="#kredyty">Kredyty</a><a href="#biuro">O biurze</a></div>
+<div><b>Kontakt</b><a href="tel:+48500251769">500 251 769</a><a href="tel:+48530746226">530 746 226</a></div>
+</div>
+<div class="d"><span>© 2012-2026 Szulc &amp; Szulc Nieruchomości</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=nieruchomosci-szulc.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+</div>
+</footer>
+<script>
+(function(){
+var b=document.querySelector('.burger'),n=document.getElementById('nav');
+b.addEventListener('click',function(){var o=n.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('otw');b.setAttribute('aria-expanded','false')}});
+var st={k:'*',t:'*'},lim=window.matchMedia('(max-width:699px)').matches?99:6,pok=document.getElementById('pokaz');
+var of=[].slice.call(document.querySelectorAll('.of'));
+function ust(){var w=of.filter(function(e){return(st.k==='*'||e.dataset.k===st.k)&&(st.t==='*'||e.dataset.t===st.t)});
+of.forEach(function(e){e.hidden=true});w.forEach(function(e,i){e.hidden=i>=lim});
+pok.hidden=w.length<=lim;document.getElementById('brak').hidden=w.length>0}
+document.querySelectorAll('.filtry button').forEach(function(x){x.addEventListener('click',function(){
+var p=x.dataset.f.split(':'),g=p[0],v=p[1];
+if(g==='t'&&st.t===v)v='*';st[g]=v;
+document.querySelectorAll('.filtry button').forEach(function(y){var q=y.dataset.f.split(':');y.setAttribute('aria-pressed',st[q[0]]===q[1])});
+ust()})});
+pok.addEventListener('click',function(){lim+=6;ust()});ust();
+var m=document.getElementById('mapa');
+new IntersectionObserver(function(e,o){if(e[0].isIntersecting){var f=document.createElement('iframe');f.src=m.dataset.src;f.loading='lazy';f.title='Mapa dojazdu';m.appendChild(f);o.disconnect()}},{rootMargin:'300px'}).observe(m);
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('finfo').textContent='To podgląd strony, na docelowej wersji wiadomość trafi prosto na Państwa skrzynkę.'});
+var sek=[].slice.call(document.querySelectorAll('main section[id]')),ln=[].slice.call(n.querySelectorAll('a'));
+addEventListener('scroll',function(){var y=scrollY+120,a='';sek.forEach(function(s){if(s.offsetTop<=y)a=s.id});ln.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+a)})},{passive:true});
+})();
+</script>
+</body>
+</html>
